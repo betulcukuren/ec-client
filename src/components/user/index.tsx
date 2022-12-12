@@ -26,16 +26,7 @@ const UserPage: FC = () => {
 
   return (
     <Layout className="">
-        { users.map(( listValue, index ) => {
-          return (
-            <tr key={index}>
-              <td>{listValue.id}</td>
-              <td>{listValue.username}</td>
-              <td>{listValue.email}</td>
-              <td>{listValue.password}</td>
-            </tr>
-          );
-        })}
+
     </Layout>
   );
 };

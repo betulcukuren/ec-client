@@ -5,7 +5,7 @@ import IProductData from '../../types/Product';
 import ProductService from '../../services/ProductService';
 import type { TablePaginationConfig } from 'antd/es/table';
 import type { FilterValue, SorterResult } from 'antd/es/table/interface';
-import { FloatButton, Modal, Form, Input } from 'antd';
+import { FloatButton, Modal } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import ProductForm from './productForm';
 
@@ -24,7 +24,6 @@ const ProductsPage: FC = () => {
   useEffect(() => {
     retrieveProducts();
   }, []);
-  
   
   const retrieveProducts = () => {
     ProductService.getAll()
